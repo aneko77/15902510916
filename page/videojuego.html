@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aneth Page</title>
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <link href="../assets/game/game.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- menu principal  -->
+    <div class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="./galeria.html">Mi galería</a>
+        <a href="./video.html">Video</a>
+        <a class="active" href="./videojuego.html">Videojuego</a>
+        <a href="./manual.html">Manual técnico</a>
+    </div>
+    <!--contenido de la pagina-->
+    <h1 class="title">Mi videojuego</h1>
+    <p class="subtitle">Mi propia versión del clásico juego de la serpiente, ¡que lo disfrutes!</p>
+    <div class="container">
+        <center>
+            <div id="board"></div>
+        </center>
+        <center>
+            <div class="boardInfo">
+                <button id="start"> Start </button>
+                <div class="score">
+                    Score: <span id="scoreBoard"></span>
+
+                </div>
+
+            </div>
+            <div id="gameOver"> GAME OVER</div>
+        </center>
+
+    </div>
+    <script src="../assets/game/game.js"></script>
+</body>
+
+</html>

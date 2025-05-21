@@ -1,0 +1,132 @@
+body{
+    background-color: #e5d9f2;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* menu de navegacion */
+.menu{
+    overflow: hidden;
+    margin-left: 10%;
+}
+/* estilo de cada opcion del menu (etiqueta a) */
+.menu a {
+    float:left; 
+    display:block;
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+}
+/* estilo al pasar el cursor */
+.menu a:hover{
+    background-color: #d9eafd;
+}
+.menu .active{
+    background-color: #a594f9;
+    color: white;
+}
+.container {
+    padding: 5px 15%;
+}
+.title {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.1); 
+    
+}
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.1);  
+}
+.encabezado {
+    font-size: 25px;
+    color: #000;
+}
+.notas {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 50px;
+        border-radius: 10px;
+    background-color: #fff;
+}
+.notas th, .notas td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center ;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.notas th:nth-child(2),
+.notas td:nth-child(2){
+    width: 50%;
+}
+.container-info {
+    margin-top: 30px;
+    width: 100%;
+}
+.profile-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.panel-img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.panel-col{
+    display: flex;
+}
+.panel-info{
+    margin-left: 25px;
+    flex: 3;
+}
+.justifi-info {
+    text-align: justify;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.skill-card {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+-webkit-box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+}
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.progress-bar{
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f5efff;
+}
+.progress-fill{
+    height: 100%;
+    border-radius: 5px;
+    background-color: #a594f9;
+
+}

@@ -1,0 +1,72 @@
+
+
+#board{
+    max-width: 500px;
+    width: 500px;
+    height: 500px;
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    border: solid 15px #fff;
+    border-radius: 10px;
+        box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+-webkit-box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 9px 18px -13px rgba(0,0,0,0.75);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+#gameOver {
+    display: none;
+    font-size: 30px;
+}
+
+.boardInfo {
+    /* display: flex;
+    justify-content: space-between;
+    margin-top: 10; */
+    width: 500px;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.score {
+    float: right;
+    text-align:right;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+/* cuadrados vacios  */
+.emptySquare {
+    background-color: #456990;
+}
+
+/* cuadrados de snalke */
+.snakeSquare {
+    background-color: #ccf47f;
+}
+/* comida de las snake*/
+.foodSquare {
+    background-color: #f35a69;
+}
+    .no-scroll {
+        overflow: hidden;
+    }

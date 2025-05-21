@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Aneth Page</title>
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="./galeria.html">Mi galería</a>
+        <a href="./video.html">Video</a>
+        <a href="./videojuego.html">Videojuego</a>
+        <a class="active" href="./manual.html">Manual técnico</a>
+    </div>
+    <h1 class="title">Manual Técnico</h1>
+    <p class="subtitle">Aquí encontrarás información técnica de cómo está elaborado el sitio</p>
+    <div class="container">
+        <div class="container-info">
+            <h1 class="encabezado">Acerca de </h1>
+            <p class="justifi-info">Este es un sitio web creado a partir de una tarea de la Universidad Mariano Gálvez
+                de Guatemala como parte del Curso de Introducción a los Sistemas de Cómputo correspondiente a la carrera
+                de Ingeniería en Sistemas.</p>
+        </div>
+        <div class="container-info">
+            <h1 class="encabezado">Contenido</h1>
+            <ul>
+                <li><a href="#panel-tecnologia">Tecnología utilizada</a></li>
+                <li><a href="#panel-estructura">Estructura de carpetas</a></li>
+                <li><a href="#panel-paginas">Páginas</a></li>
+                <li><a href="#panel-slider">Slider de imágenes</a></li>
+                <li><a href="#panel-game">Snake game</a></li>
+            </ul>
+        </div>
+        <div class="container-info" id="panel-tecnologia">
+            <h1 class="encabezado">Tecnología utilizada</h1>
+            <p><b>HTML:</b> se utilizó html para marquetación de cada una de las páginas. </p>
+            <p><b>CSS:</b> se utilizó css para darle estilo a cada una de las páginas. </p>
+            <p><b>Javascript:</b> se utilizó para toda la funcionalidad del videojuego. </p>
+        </div>
+        <div class="container-info" id="panel-estructura">
+            <h1 class="encabezado">Estructura de carpetas</h1>
+            <p><b>assets:</b> recursos que se utilizan en la página (plugins, archivos, imágenes, etc). </p>
+            <p><b>page:</b> aquí se encuentran las páginas que conforman nuestro sitio web. </p>
+            <p><b>styles:</b> se encuentran las hojas de estilo que le dan estilo a nuestra página. </p>
+        </div>
+        <div class="container-info" id="panel-paginas">
+            <h1 class="encabezado">Páginas</h1>
+            <p><b>Index:</b> es la página principal aquí encontrarás mi Hoja de Vida y una tabla correspondiente a mis
+                notas del primer y segundo parcial del presente semestre. </p>
+            <p><b>Galeria:</b> en esta página encontrarás una serie de imágenes de mis animes favoritos. </p>
+            <p><b>Video:</b> en esta página encontrarás un video de Youtube cargado mediante un iframe. </p>
+            <p><b>Videojuego:</b> en esta página encontrarás un videojuego desarrollado mediante html, css y javascript.
+            </p>
+            <p><b>Manual:</b> encontrarás información técnica de como se construyó el sitio. </p>
+            <div class="container-info" id="panel-slider">
+                <h1 class="encabezado">Slider de imágenes</h1>
+                <p>Para crear un carrousel se desarrolló una pequeña librería con css y js. Para poder utilizarla es
+                    necesario linkear el siguiente archivo</p>
+                <br />
+                <p>Dentro del head de la pagina: &lt;link href="../assets/slider/slider.css" rel="stylesheet"/&gt;</p>
+                <p>Antes de la etiqueta de cierre del body: &lt;script
+                    src="../assets/slider/slider.js"&gt;&lt;/script&gt;</p>
+                <br />
+                <p>Luego de esto procedos en nuestro html a crear la siguiente estrcutura:</p>
+                <p>
+                    &lt;div class="slider" id="slider"&gt;&lt;/div&gt;
+                </p>
+                <p>Y por último colocamos cada imagen de la siguiente manera:</p>
+                <p>&lt;div class="slide"&gt;&lt;img src="../assets/img/1.jpeg" alt="imagen no cargada"&gt; &lt;/div&gt;
+                </p>
+            </div>
+            <div class="container-info" id="panel-game">
+                <h1 class="encabezado">Snake game</h1>
+                <p>Para utilizar el videojuego es necesario seguir los siguientes pasos</p>
+                <br>
+                <p>Dentro del head de la página: &lt;link href="../assets/game/game.css" rel="stylesheet" /&gt;</p>
+                <p>Antes de la etiqueta de cierre del body: </p>
+                <p>&lt;script src="../assets/game/game.js"&gt;&lt;/script&gt;</p>
+                <br />
+                <p>Por último solo creamos la seguuiente estructura</p>
+                <p>&lt;div id="board"&gt;&lt;/div&gt;</p>
+                <p>&lt;div class="boardInfo"&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button id="start"&gt; Start &lt;/button&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="score"&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score: &lt;span
+                    id="scoreBoard"&gt;&lt;/span&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+                <p>&lt;div id="gameOver"&gt; GAME OVER&lt;/div&gt;</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
